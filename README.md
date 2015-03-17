@@ -13,4 +13,4 @@ Make sure `vagrant` and VBoxManage binaries are in system path. Then in command 
 
 Now you should be in the a customized ubuntu/trusty64 environment for the OJ.
 Follow [http://docs.sharifjudge.ir/en:v1.4:installation](http://docs.sharifjudge.ir/en:v1.4:installation) to complete
-installation. 
+the installation.

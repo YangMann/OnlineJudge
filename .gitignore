@@ -5,6 +5,7 @@
 */cache/*
 */cache/!index.html
 */cache/!.htaccess
+!application/cache/Twig
 
 # IntelliJ IDEA
 *.iml

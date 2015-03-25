@@ -85,9 +85,9 @@ $db['default'] = array(
 	/*  Enter database connection settings here:  */
 	'dbdriver' => 'postgre',     // database driver (mysqli, postgre)
 	'hostname' => 'localhost',  // database host
-	'username' => '',           // database username
-	'password' => '',           // database password
-	'database' => '',           // database name
+	'username' => 'postgres',           // database username
+	'password' => 'postgres',           // database password
+	'database' => 'oj',           // database name
 	'dbprefix' => '',       // table prefix
 	/**********************************************/
 

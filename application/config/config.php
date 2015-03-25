@@ -272,7 +272,7 @@ $config['cache_path'] = '';
 | http://codeigniter.com/user_guide/libraries/sessions.html
 |
 */
-$config['encryption_key'] = 'PLEASE_CHANGE_ME_TO_A_RANDOM_KEY';
+$config['encryption_key'] = 'XqJCWUplk1hgQjt8T3YnSzDmaVuEIH6y';
 
 /*
 |--------------------------------------------------------------------------
@@ -365,8 +365,8 @@ $config['global_xss_filtering'] = FALSE;
 | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
 */
 $config['csrf_protection'] = TRUE;
-$config['csrf_token_name'] = 'shj_csrf_token';
-$config['csrf_cookie_name'] = 'shjcsrftoken';
+$config['csrf_token_name'] = 'oj_csrf_token';
+$config['csrf_cookie_name'] = 'ojcsrftoken';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = FALSE;
 $config['csrf_exclude_uris'] = array();

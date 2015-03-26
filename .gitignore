@@ -20,7 +20,3 @@ data
 # compiled files
 *.o
 *.so
-
-# run tests
-tester/easysandbox/oracle
-tester/easysandbox/t

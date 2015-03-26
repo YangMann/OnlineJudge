@@ -72,20 +72,19 @@ Vagrant.configure(2) do |config|
     sudo apt-get install -y postgresql postgresql-client postgresql-contrib
     sudo rm -r /var/www
     sudo ln -s /vagrant /var/www
-    sudo cp onlinejudge.conf /etc/apache2/sites-available/
+    sudo cp /vagrant/onlinejudge.conf /etc/apache2/sites-available/
     sudo rm -r /etc/apache2/sites-enabled/*
     sudo ln -s /etc/apache2/sites-available/onlinejudge.conf /etc/apache2/sites-enabled/onlinejudge.conf
     sudo /etc/init.d/apache2 restart
     sudo mkdir /vagrant/data
+    sudo chmod -R 700 /vagrant/data
     sudo chmod 700 /var/www/application/cache/Twig
     sudo chmod 700 /vagrant/tester
     sudo chmod 700 /vagrant/assignments
-    sudo cp /vagrant/pg_hba.conf /etc/postgresql/9.3/main/pg_hba.conf
-    sudo cp /vagrant/postgresql.conf /etc/postgresql/9.3/main/postgresql.conf
-    sudo /etc/init.d/postgresql restart
-    sudo chmod +x /vagrant/tester/easysandbox/runalltests.sh
-    sudo chmod +x /vagrant/tester/easysandbox/runtest.sh
     cd /vagrant/tester/easysandbox
+    sudo chmod +x runalltests.sh
+    sudo chmod +x runtest.sh
+    make clean
     make runtests
   SHELL
 end

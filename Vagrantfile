@@ -76,6 +76,7 @@ Vagrant.configure(2) do |config|
     sudo rm -r /etc/apache2/sites-enabled/*
     sudo ln -s /etc/apache2/sites-available/onlinejudge.conf /etc/apache2/sites-enabled/onlinejudge.conf
     sudo /etc/init.d/apache2 restart
+    sudo mkdir /vagrant/data
     sudo chmod 700 /var/www/application/cache/Twig
     sudo chmod 700 /vagrant/tester
     sudo chmod 700 /vagrant/assignments

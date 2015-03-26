@@ -66,7 +66,7 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
-    sudo apt-get upgrade
+    sudo apt-get upgrade -y
     sudo apt-get install -y apache2 gcc g++ libapache2-mod-php5 php5 php5-gd php5-pgsql
     sudo /etc/init.d/apache2 restart
     sudo apt-get install -y postgresql postgresql-client postgresql-contrib
